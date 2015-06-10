@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+@IMPORT url("father.css"); /* 상속 */
+.trClass {
+	border: 1px solid black;
+	height: 50px
+}
+
+.thClass {
+	border: 1px solid black;
+	text-align: center;
+	background-color: #ff0080;
+	color: white;
+	width: 150px
+}
+
+.tdClass {
+	border: 1px solid black;
+	text-align: center
+}
+
+.inputClass {
+	width: 350px
+}
