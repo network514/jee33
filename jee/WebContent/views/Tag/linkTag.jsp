@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h3>링크태그 a 태그 와 img 태그</h3>
-	<div>
+	<%-- <div>
 		<h3>링크 태그(a) : 페이지 이동</h3>
 		<a herf="#> 기본형 </a>
 		<a href="http://www.naver.com">네이버</a>
@@ -18,6 +18,6 @@
 		<h3>이미지 태그(img)</h3>
 		<img src="../../images/Jellyfish.jpg" alt="" style="width:500px">
 		<!-- 이미지는 width만 주어도 비율을 따져서 축소된다. -->
-	</div>
+	</div> --%>
 </body>
 </html>
