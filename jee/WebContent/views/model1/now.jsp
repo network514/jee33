@@ -8,8 +8,8 @@
 }
 %>
 <!-- 선언부 -->
-<%@ page import="java.util.Date" %>
-<%@ page import = "java.text.SimpleDateFormat" %> <!-- 스크립트릿 -->
+<%@ page import="java.util.Date"%>
+<%@ page import = "java.text.SimpleDateFormat"%> <!-- 스크립트릿 -->
     <!-- 54p. / 68p. import, contents type(UTF-8)/ 81p. -->
 <%
 	Date now = new Date();

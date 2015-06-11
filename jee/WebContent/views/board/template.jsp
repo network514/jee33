@@ -11,7 +11,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-	@import url("template.css")
+	@import url("<%=request.getContextPath()%>/css/template.css")
 </style>
 </head>
 <body>

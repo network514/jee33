@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<title>헤더 샘플</title>
 	<style>
-		@import url("header.css");
+		@import url("<%=request.getContextPath()%>/css/header.css");
 	</style>
 </head>
 <body>
@@ -21,7 +21,7 @@
 			<div class="clear"></div>
 			<div id="logo">
 				<a href="#">
-					<img src="../../images/gimbob.png" width="250px" height="60px" alt="" />
+					<img src="<%=request.getContextPath()%>/images/gimbob.png" width="250px" height="60px" alt="" />
 				</a>
 			</div>
 			<nav id="topMenu">

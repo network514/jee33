@@ -14,8 +14,8 @@
 			비밀번호 : <input type="password" name="pass" /><br />
 			<label for="Hello">인사말 : </label> <br />
 			인사말 : <textarea name="area" id="" cols="30" rows="10"></textarea><br />
-			<input type="image" src="../../images/Hydrangeas.jpg" width="300px"><br />
-			<input type="image" src="../../images/pikachu.gif" width="300px"><br />
+			<input type="image" src="<%=request.getContextPath()%>/images/Hydrangeas.jpg" width="300px"><br />
+			<input type="image" src="<%=request.getContextPath()%>/images/pikachu.gif" width="300px"><br />
 		</fieldset>
 	</form>
 </body>

@@ -8,7 +8,7 @@
 	<meta charset="UTF-8" />
 	<title>Document</title>
 	<style>
-		@import url("onlyContent.css");
+		@import url("<%=request.getContextPath()%>/css/onlyContent.css");
 	</style>
 </head>
 <body>

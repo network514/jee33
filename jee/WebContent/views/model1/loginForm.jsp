@@ -12,13 +12,13 @@
 			<tr style="border: 1px solid black;" >
 				<td style="border: 1px solid black;" >ID : </td>
 				<td style="border: 1px solid black;" >
-					<input type="text" name="memberId" id="memberId" value="ID"/>
+					<input type="text" name="memberId" id="memberId" placeholder="아이디"/>
 				</td>
 			</tr>
 			<tr style="border: 1px solid black;" >
 				<td style="border: 1px solid black;" > PWD : </td>
 				<td style="border: 1px solid black;" >
-					<input type="password" name="pass" id="pass" value="PASSWORD"/>
+					<input type="password" name="pass" id="pass" />
 				</td>
 			</tr>
 			<tr>
