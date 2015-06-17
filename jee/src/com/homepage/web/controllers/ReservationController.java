@@ -52,7 +52,9 @@ public class ReservationController extends HttpServlet {
         case "/reservation/checkOut.do":
         	System.out.println("체크인 넣어옴..");
              String msg2 = service.checkOut(floor, row, id);
-             RequestDispatcher dispatcher2 = request.getRequestDispatcher("");
+             request.setAttribute("msg", msg2);
+             request.setAttribute("seat", seat);
+             RequestDispatcher dispatcher2 = request.getRequestDispatcher("/views/model2/reservationForm.jsp");
             dispatcher2.forward(request, response);
             break; // 체크아웃
         case "/reservation/showStatus.do" :
