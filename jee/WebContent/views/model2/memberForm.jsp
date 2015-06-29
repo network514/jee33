@@ -8,37 +8,12 @@
      <style >
             @IMPORT url("../../css/model2/kaup.css") ;
      </style >
-     <script type ="text/javascript">
-     function searchId(){
-          window.open(" <%=request.getContextPath() %>/member/searchIdForm.do", " searchId",
-                      "scrollbar,toolbar=no,location=no,directories=no,status=no,menubar=yes,resizable=yes,width=600,height=500,top=200,left=400" )
-     }
-     function searchPass() {
-           window.open(" <%= request.getContextPath()%>/member/searchPassForm.do", "searchPass",
-                      "scrollbar,toolbar=no,location=no,directories=no,status=no,menubar=yes,resizable=yes,width=600,height=500,top=200,left=400" )
-     }
-     function join() {
-            <%-- location.href = "<%=request.getContextPath()%>/member/joinForm.do"; --%>
-           document.frmJoin.submit();
-     }
-            function login() {
-                 /* if(document.frmLogin.id.value.length == 0){
-                     alert("아이디를 써주세요");
-                     frmLogin.id.focus(); // 커서를 인풋텍스트 칸에 위치시킨다.
-                     // return false;
-                }
-                if(document.frmLogin.password.value == ""){
-                     alert("비밀번호는 반드시 입력해야 합니다.");
-                     frmLogin.password.focus(); // 커서를 인풋텍스트 칸에 위치시킨다.
-                     // return false;
-                } */
-                 // return false;
-                document.frmLogin.submit();
-           }
-     </script >
 </head>
+<script type ="text/javascript">
+</script>
+
+<script type ="text/javascript" src="<%=request.getContextPath()%>/js/member.js"></script>
 <body>
-     
      <form action ="<%= request.getContextPath() %>/model2/join.do" method= "post" name = "frmJoin">
      <fieldset >
             <legend >회원 가입 </legend >
@@ -110,10 +85,10 @@
      </form >
      <div >
             <span >
-                 <a href ="#" onclick="searchId()"> 아이디 찾기</a >
+                 <a href ="#" onclick="searchId('<%=request.getContextPath() %>/member/searchIdForm.do')"> 아이디 찾기</a >
             </span >
             <span >
-                 <a href ="#" onclick="searchPass()"> 비밀번호 찾기</a>
+                 <a href ="#" onclick="searchPass('<%= request.getContextPath()%>/member/searchPassForm.do')"> 비밀번호 찾기</a>
             </span >
      </div >
 </body>
